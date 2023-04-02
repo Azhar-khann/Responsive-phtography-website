@@ -1,0 +1,652 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+
+
+
+.main-content{
+  position: relative;
+  top:5.3125rem;
+
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+}
+
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+   
+  }
+
+  
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+
+
+/* my code */
+  height: 85px;
+  overflow: hidden; 
+  z-index: 1;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.875rem;
+}
+
+header .logo {
+  flex: 1;
+  color: #4A4A4A;
+  font-family: "Roboto Mono",sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+
+/* my code */
+ 
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 3.5rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+
+
+/* my code */
+  font-weight: 400;
+}
+
+header .icon {
+  width: 1rem;
+  padding-left: .75rem;
+
+/* my code */
+  
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  header .desktop {
+    display: none;
+    
+  }
+
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 0;
+    padding-top: 4%;  /* my code */
+  
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .mobile .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+   
+  }
+
+
+  /* my code */
+
+  header {
+    height:auto;
+
+  }
+}
+
+
+
+/* Sign Up Section */
+
+
+
+#sign-up-section {
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 43.5rem;
+
+
+
+
+
+
+
+
+/* my code */
+  background-image: url("../images/banner-landingpage.jpg");
+  position: relative;
+  
+
+
+}
+
+#sign-up-cta {
+  padding: 0 5rem 2.5rem 5rem;
+  border: solid 1px #979797;
+  border-radius: 4px;
+  background-color: #9dc20b;
+
+
+
+
+
+
+  /* my code */
+  position: absolute;
+  top:170px;
+  left:10%;
+}
+
+#sign-up-cta .content {
+  width: 25.625rem;
+  margin-top: 2rem;
+
+
+
+
+
+
+  /* my code */
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: white;
+}
+
+#sign-up-cta h1 {
+  font-size: 3.125rem;
+}
+
+#sign-up-cta h2 {
+  font-size: 2.25rem;
+}
+
+#sign-up-cta span strong {
+  font-weight: bold;
+
+
+
+
+
+  /* my code */
+  color:white;
+  font-size:1.25rem;
+  line-height:1.4;
+  margin-bottom: 20px;
+}
+
+#sign-up-cta .cursive {
+  font-family: "Damion", cursive;
+
+  
+}
+
+#sign-up-cta .striking {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  padding-bottom: .75rem;
+
+
+
+
+  /* my code */
+  color:white;
+  font-size: 3.125rem;
+  line-height:1.4;
+  margin-bottom:12px ;
+
+}
+
+#sign-up-cta .button {
+  margin-top: 1.625rem;
+  padding: 1.25rem 7.25rem;
+
+
+
+
+  /* my code */
+
+  color: white;
+  font-size:20px;
+  line-height: 1.4;
+  background-color: #4A4A4A;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+#sign-up-cta span{
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.4;
+} 
+
+@media only screen and (max-width: 768px) {
+  #sign-up-section {
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+    background-position-x: right; /* my code */
+    background-size: cover;       /* my code */
+   
+  }
+
+  #sign-up-cta {
+    
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    
+  }
+
+  #sign-up-cta .content {
+    margin-top: 0;
+    width:100%;
+  }
+
+  #sign-up-cta .email {
+    display: none;
+  }
+
+  #sign-up-cta .striking {
+    font-size: 3.125rem;
+  }
+
+  #sign-up-cta .cursive {
+    font-size: 2.25rem;
+    font-weight:100;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #sign-up-section {
+    height: 20rem;
+  }
+
+  #sign-up-cta .striking {
+    font-size: 1.9rem;
+  
+  }
+
+  #sign-up-cta .cursive {
+    font-size: 2rem;
+  }
+}
+
+/* Features Section */
+
+#features-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  background-color: #f3f3f3;
+
+
+
+  /* my code */
+  height:auto;
+  position: relative;
+
+}
+
+.feature {
+  flex: 1;
+  padding: 2rem;
+  margin: 0px 1.25rem;
+  background-color: white;
+
+
+
+}
+
+.feature h2 {
+  padding-bottom: .5rem;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  line-height: 1.2;
+  
+
+}
+
+.feature h3 {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #4a4a4a;
+  
+  
+}
+
+
+/* my code */
+
+.feature .center{
+  width:100%;
+  height:100%;
+}
+
+.feature .image-container{
+  width: 100%;
+  height: auto;
+
+  
+
+}
+
+.feature img{
+  width:90%;
+  height:65%;
+  background-size: cover;
+  display: block;
+}
+
+.feature .content{
+  width:100%;
+  position: relative;
+  top:5%;
+  margin:auto;
+  padding-bottom:10%;
+}
+
+
+@media only screen and (max-width: 890px) {
+  .feature h2 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+
+  .feature h3 {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-family: 'Roboto Light';
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #features-section {
+    flex-flow: column;
+    padding: 0;
+  }
+
+  .feature {
+    margin: 0;
+    padding: 1.25rem 1rem 0 1rem;
+  }
+
+  .feature h2 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+    margin-top: 25px;
+  }
+
+  .feature h3 {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    font-family: 'Roboto Light';
+    
+  }
+  
+
+
+}
+
+
+
+
+
+/* Filters Section */
+
+#filters-section {
+  padding: 4rem 0;
+  background-color: #4a4a4a;
+}
+
+#filters-section .content {
+  padding: 0 .625rem;
+  margin-bottom: 5rem;
+}
+
+#filters-section .content h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+  opacity: 100%;
+}
+
+#filters-section .content h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+  color: white;
+ margin-top: 10px;
+}
+
+#filters-section .images-container {
+  max-width: 100%;
+  padding: 0 1%;
+
+  /* my code */
+  display: flex;
+}
+
+
+/* my code */
+#filters-section .image-container {
+  width:30%;
+  height:40%;  
+
+}
+
+.image-container img{
+  width:100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 760px) {
+  #filters-section {
+    padding: 1.5rem 0 0 0;
+  }
+
+  #filters-section .content {
+    margin-bottom: 1rem;
+  }
+
+  #filters-section .content h2 {
+    padding-bottom: .625rem;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+  }
+
+  #filters-section .content h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+    width:90%; /*my code */
+    margin:auto;/*my code */
+  }
+
+  #filters-section .images-container {
+    padding: 0;
+    
+  }
+  
+  /* my code */
+  #filters-section .image-container {
+    width: 100%; 
+    height: 40%;
+  }  
+
+
+
+  #filters-section .extra {
+    display: none;
+  }
+}
+
+/* Quotes Section */
+
+#quotes-section {
+  background-color: #f3f3f3;
+
+}
+
+#quotes-section .content {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+#quotes-section .quote {
+  padding-right: 1.875rem;
+  font-family: "Palatino", serif;
+  font-size: 1.875rem;
+  line-height: 1.1;
+  font-style: italic;
+  color: #4a4a4a;
+
+}
+
+#quotes-section .quote-citation {
+  height: 1.875rem;
+  padding-right: 1.5%;
+  padding-top: 0.5%;
+}
+
+
+
+@media only screen and (max-width: 760px) {
+  #quotes-section .content {
+    padding: 1.875rem .625rem;
+    flex-direction: column; /* my code */
+    align-items: center; /* my code */
+    
+  }
+
+  #quotes-section .quote {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding-right: 0;  /* my code */
+  }
+
+  #quotes-section .quote-citation {
+    display: block;
+    padding-top: 1rem;
+    
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-size: .75rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+  font-size: 12px;
+  color:white;
+  font-weight: 400;
+}
+
+footer .location{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 760px) {
+  
+  footer .content {
+    /*font-size: .625rem;*/
+    justify-content: space-around;
+  }
+
+  /* my code */
+
+  footer .copyright,
+  footer .location{
+    font-size: 0.625rem;
+    
+  }
+
+  footer{
+    padding: 15px 10px;
+  }
+
+  
+
+
+  
+}
